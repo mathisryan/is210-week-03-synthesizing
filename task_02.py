@@ -4,3 +4,11 @@
 
 
 import inquisition
+
+ORIG = 'Spanish'
+SUB = 'Flemish'
+SIZE = len(ORIG)
+TEXT = inquisition.SPANISH
+WHERE = TEXT.find(ORIG)
+
+FLEMISH = TEXT[:WHERE] + 'Flemish' + TEXT[WHERE + SIZE:]
